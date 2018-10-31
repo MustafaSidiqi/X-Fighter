@@ -1,0 +1,296 @@
+19:59:24 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Mustafa\Desktop\sd_card22\sd_card22.sdk\temp_xsdb_launch_script.tcl
+19:59:26 INFO  : XSDB server has started successfully.
+19:59:26 INFO  : Processing command line option -hwspec C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper.hdf.
+20:06:34 INFO  : Refreshed build settings on project sd
+20:12:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:12:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+20:12:30 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+20:12:42 INFO  : ps7_init is completed.
+20:12:42 INFO  : ps7_post_config is completed.
+20:12:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:13:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:13:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:13:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:13:26 ERROR : Port COM3 is already in use.
+20:13:43 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:13:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:14:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:15:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:16:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:20:44 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+20:20:44 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+20:20:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:20:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+20:21:00 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+20:21:07 INFO  : ps7_init is completed.
+20:21:07 INFO  : ps7_post_config is completed.
+20:21:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:24:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:24:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:24:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+00:24:05 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+00:24:08 INFO  : ps7_init is completed.
+00:24:08 INFO  : ps7_post_config is completed.
+00:24:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:24:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:24:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:25:00 ERROR : Unexpected error while launching program.
+java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.TM.terminateCurrentLaunch(TM.java:819)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:596)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+00:25:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:25:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:25:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:29:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:48:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:50:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:51:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:52:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:52:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:52:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:57:45 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+09:10:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:10:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+09:10:56 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+09:11:06 INFO  : ps7_init is completed.
+09:11:06 INFO  : ps7_post_config is completed.
+09:11:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:11:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:26:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:26:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:29:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:34:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:35:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:39:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:42:41 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:42:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:43:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:43:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+09:43:07 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+09:43:12 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    AP transaction error (DP CTRL_STAT=0xf0000021)
+    Error Address = 0xf8007080, Size = 0x00000004
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+09:43:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:43:20 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Failed to download ELF file
+
+
+    Cannot access DDR: the controller is held in reset
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+09:43:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:44:31 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:50:20 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Mustafa\Desktop\sd_card22\sd_card22.sdk\temp_xsdb_launch_script.tcl
+09:50:22 INFO  : XSDB server has started successfully.
+09:50:23 INFO  : Processing command line option -hwspec C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper.hdf.
+09:50:23 INFO  : Checking for hwspec changes in the project sd_card_design_wrapper_hw_platform_0.
+09:51:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:59:08 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Mustafa\Desktop\sd_card22\sd_card22.sdk\temp_xsdb_launch_script.tcl
+09:59:10 INFO  : XSDB server has started successfully.
+09:59:10 INFO  : Processing command line option -hwspec C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper.hdf.
+09:59:10 INFO  : Checking for hwspec changes in the project sd_card_design_wrapper_hw_platform_0.
+09:59:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:00:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:00:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+10:00:14 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+10:00:50 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: The program file specified in the launch configuration does not exist
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:580)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:06:36 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:07:08 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Mustafa\Desktop\sd_card22\sd_card22.sdk\temp_xsdb_launch_script.tcl
+10:07:11 INFO  : XSDB server has started successfully.
+10:07:11 INFO  : Processing command line option -hwspec C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper.hdf.
+10:07:11 INFO  : Checking for hwspec changes in the project sd_card_design_wrapper_hw_platform_0.
+10:08:07 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Mustafa\Desktop\sd_card22\sd_card22.sdk\temp_xsdb_launch_script.tcl
+10:08:10 INFO  : XSDB server has started successfully.
+10:08:10 INFO  : Processing command line option -hwspec C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper.hdf.
+10:11:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:11:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+10:11:10 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+10:11:40 INFO  : ps7_init is completed.
+10:11:40 INFO  : ps7_post_config is completed.
+10:11:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:12:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:12:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:13:05 INFO  : No changes in MSS file content so not generating sources.
+10:13:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:13:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:13:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+10:13:57 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+10:14:01 INFO  : ps7_init is completed.
+10:14:01 INFO  : ps7_post_config is completed.
+10:14:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:14:10 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:16:03 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Mustafa\Desktop\sd_card22\sd_card22.sdk\temp_xsdb_launch_script.tcl
+10:16:05 INFO  : XSDB server has started successfully.
+10:16:08 INFO  : Processing command line option -hwspec C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper.hdf.
+10:16:08 INFO  : Checking for hwspec changes in the project sd_card_design_wrapper_hw_platform_0.
+10:16:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+10:16:33 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+10:16:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:18:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:18:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:18:57 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:19:09 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:19:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:19:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:19:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:19:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:19:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:20:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:20:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:20:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+10:20:39 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+10:20:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:20:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+10:20:44 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+10:20:53 INFO  : ps7_init is completed.
+10:20:54 INFO  : ps7_post_config is completed.
+10:20:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:21:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:59:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:59:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:00:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:02:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:03:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:03:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:53:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:53:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+11:53:31 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+11:53:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:00:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:01:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:02:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:04:09 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+12:04:09 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+12:04:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:04:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:04:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+12:04:37 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+12:04:44 INFO  : ps7_init is completed.
+12:04:44 INFO  : ps7_post_config is completed.
+12:04:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:17:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:18:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:18:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:20:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:22:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:23:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:24:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:24:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+12:24:25 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+12:24:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:24:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:25:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:26:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:39:21 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read(BufferedReader.java:182)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Thread.java:745)
+12:39:21 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+11:42:05 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Mustafa\Desktop\sd_card22\sd_card22.sdk\temp_xsdb_launch_script.tcl
+11:42:07 INFO  : XSDB server has started successfully.
+11:42:08 INFO  : Processing command line option -hwspec C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper.hdf.
+11:42:08 INFO  : Checking for hwspec changes in the project sd_card_design_wrapper_hw_platform_0.
+11:43:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:43:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279573686A" && level==0} -index 1' command is executed.
+11:43:02 INFO  : FPGA configured successfully with bitstream "C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper_hw_platform_0/sd_card_design_wrapper.bit"
+11:43:05 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+11:43:11 INFO  : ps7_init is completed.
+11:43:11 INFO  : ps7_post_config is completed.
+11:43:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:43:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:44:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:54:13 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:59:04 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Mustafa\Desktop\sd_card22\sd_card22.sdk\temp_xsdb_launch_script.tcl
+11:59:05 INFO  : XSDB server has started successfully.
+11:59:12 INFO  : Processing command line option -hwspec C:/Users/Mustafa/Desktop/sd_card22/sd_card22.sdk/sd_card_design_wrapper.hdf.
+11:59:12 INFO  : Checking for hwspec changes in the project sd_card_design_wrapper_hw_platform_0.

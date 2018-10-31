@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Jan 15 19:56:37 2017
+# Process ID: 8216
+# Current directory: C:/Users/Mustafa/Desktop/sd_card22/sd_card22.runs/impl_1
+# Command line: vivado.exe -log sd_card_design_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source sd_card_design_wrapper.tcl -notrace
+# Log file: C:/Users/Mustafa/Desktop/sd_card22/sd_card22.runs/impl_1/sd_card_design_wrapper.vdi
+# Journal file: C:/Users/Mustafa/Desktop/sd_card22/sd_card22.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sd_card_design_wrapper.tcl -notrace

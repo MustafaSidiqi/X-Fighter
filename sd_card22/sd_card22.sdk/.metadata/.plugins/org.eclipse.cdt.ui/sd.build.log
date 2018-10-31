@@ -1,0 +1,63 @@
+11:53:34 **** Auto Build of configuration Debug for project sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdCard.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdCard.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sdCard.d" -MT"src/sdCard.o" -o "src/sdCard.o" "../src/sdCard.c"
+../src/sdCard.c: In function 'main':
+../src/sdCard.c:22:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("Disk Initialize %d", disk_initialize(0));
+  ^
+../src/sdCard.c:22:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/sdCard.c:22:2: warning: implicit declaration of function 'disk_initialize' [-Wimplicit-function-declaration]
+../src/sdCard.c:25:2: warning: implicit declaration of function 'disk_status' [-Wimplicit-function-declaration]
+  printf("\nDisk status for disk 0: %d \n\r", disk_status(0));
+  ^
+../src/sdCard.c:28:24: warning: passing argument 2 of 'sd_readFile' from incompatible pointer type
+  sd_readFile(FileName, &Dest1, 4, &NumBytesRead);
+                        ^
+In file included from ../src/sdCard.c:2:0:
+../src/sdCard.h:19:5: note: expected 'u8 *' but argument is of type 'u8 (*)[10485760]'
+ int sd_readFile(const char* fileName, u8* destAddress, UINT bytesToRead, UINT* bytesRead);
+     ^
+../src/sdCard.c: In function 'sd_readFile':
+../src/sdCard.c:60:11: error: too few arguments to function 'f_printf'
+     Res = f_printf();
+           ^
+In file included from ../src/sdCard.h:13:0,
+                 from ../src/sdCard.c:2:
+../../standalone_bsp_0/ps7_cortexa9_0/include/ff.h:279:5: note: declared here
+ int f_printf (FIL* fp, const TCHAR* str, ...);      /* Put a formatted string to the file */
+     ^
+../src/sdCard.c:100:13: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+  char *p2 = Dest1;
+             ^
+../src/sdCard.c:113:14: warning: pointer targets in passing argument 1 of 'strtok' differ in signedness [-Wpointer-sign]
+  pt = strtok(Dest1, ",");
+              ^
+In file included from c:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xsdps.h:143,
+                 from ../src/sdCard.h:12,
+                 from ../src/sdCard.c:2:
+c:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\include\string.h:42:8: note: expected 'char *' but argument is of type 'u8 *'
+ char  *_EXFUN(strtok,(char *__restrict, const char *__restrict));
+        ^
+../src/sdCard.c:116:3: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+   int a = atoi(pt);
+   ^
+../src/sdCard.c:116:7: warning: unused variable 'a' [-Wunused-variable]
+   int a = atoi(pt);
+       ^
+../src/sdCard.c: At top level:
+../src/sdCard.c:10:13: warning: 'NumBytesWritten' defined but not used [-Wunused-variable]
+ static UINT NumBytesWritten;
+             ^
+../src/sdCard.c:17:11: warning: 'data' defined but not used [-Wunused-variable]
+ static u8 data[100];
+           ^
+make: *** [src/sdCard.o] Fejl 1
+
+11:53:35 Build Finished (took 343ms)
+

@@ -1,0 +1,124 @@
+
+#include "sdCard.h"
+
+static FIL fil; /* File object */
+static FATFS fatfs;
+static char _SD_File[50];
+static char* SD_File = _SD_File;
+static FRESULT Res;
+static UINT NumBytesRead;
+static UINT NumBytesWritten;
+static TCHAR *Path = "0:/";
+
+static char FileName[32] = "test.txt";
+//static char FileName[32] = "Test.bin";
+
+
+static u8 data[100];
+
+u8 Dest1[10 * 1024 * 1024];
+
+int main() {
+	printf("Disk Initialize %d", disk_initialize(0));
+	sd_initialize();
+
+	printf("\nDisk status for disk 0: %d \n\r", disk_status(0));
+
+	//sd_readFile(const char* FileName, data , NumBytesWritten, *NumBytesRead)
+	sd_readFile(FileName, &Dest1, 4, &NumBytesRead);
+	return 0;
+}
+
+int sd_initialize() {
+	/*
+	 * Register volume work area, initialize device
+	 */
+	xil_printf("SD Start\n");
+	Res = f_mount(&fatfs, Path, 1);
+	if (Res != FR_OK) {
+		return XST_FAILURE;
+	}
+	xil_printf("Success\n");
+	return Res;
+}
+
+int sd_readFile(const char* fileName, u8* destAddress, UINT bytesToRead,
+		UINT* bytesRead) {
+
+	SD_File = (char *)fileName;
+	xil_printf("File opening\n");
+
+	Res = f_open(&fil, SD_File, FA_WRITE);
+   if (Res) {
+		xil_printf("Failure");
+		return XST_FAILURE;
+	}
+
+// Creating new file with read/write permissions
+
+	Res = f_open(&fil, SD_File, FA_READ);
+	if (Res != 0) {
+		return XST_FAILURE;
+	}
+	xil_printf("File opened \n");
+//
+//	xil_printf("Writing\n");
+//
+//	Res = f_write(&fil, (const void*) 100, 20, &NumBytesWritten);
+//	if (Res) {
+//		return XST_FAILURE;
+//	}
+//	xil_printf("Writing \n");
+
+	/*
+	 * Pointer to beginning of file .
+	 */
+	Res = f_lseek(&fil, 0);
+	if (Res) {
+		return XST_FAILURE;
+	}
+	xil_printf("File lseek\n");
+
+	/*
+	 * Read data from file.
+	 */
+	Res = f_read(&fil, (void*) Dest1, fil.fsize, &NumBytesRead);
+	if (Res) {
+		return XST_FAILURE;
+	}
+	xil_printf("File read\n");
+
+	char *p2 = Dest1;
+	int lines = 0;
+	while (lines < 79) {
+		if (*p2 == '\n') {
+			lines++;
+			*p2 = ',';
+		}
+		p2++;
+	}
+
+	int count = 0;
+	char *pt;
+
+	pt = strtok(Dest1, ",");
+
+	while (pt != NULL && count < 6400) {
+		int a = atoi(pt);
+		pt = strtok(NULL, ",");
+		//mudkip->redArray[count] = a;
+		count++;
+	}
+	Res = f_close(&fil);
+
+
+	/*
+	 * Close file.
+	 */
+	Res = f_close(&fil);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	return Res;
+}
